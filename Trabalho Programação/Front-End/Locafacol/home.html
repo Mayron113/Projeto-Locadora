@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocaFacol - Aluguel de Carros</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link correto para o CSS -->
+</head>
+<body>
+    <!-- Cabeçalho com logo e menu de navegação -->
+    <header>
+        <img src="imagens/lg.png" alt="  LocaFacol"> <!-- Certifique-se que o caminho da imagem está correto -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="carros.html">Carros</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="busca">
+        <h1>Os melhores preços do Brasil - Locação de Carros</h1>
+        <form action="#">
+            <label for="local">Local de Retirada</label>
+            <input type="text" id="local" placeholder="Informe uma cidade ou aeroporto">
+
+            <label for="data-retirada">Data de Retirada</label>
+            <input type="date" id="data-retirada">
+
+            <label for="hora-retirada">Hora de Retirada</label>
+            <input type="time" id="hora-retirada" value="11:00">
+
+            <label for="data-devolucao">Data de Devolução</label>
+            <input type="date" id="data-devolucao">
+
+            <label for="hora-devolucao">Hora de Devolução</label>
+            <input type="time" id="hora-devolucao" value="11:00">
+
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
+    <!-- Seção de promoções -->
+    <section class="promocoes">
+        <h2>Promoções de Locadoras de Carros</h2>
+        <div class="promo-item">
+            <img src="imagens/images.jpg" alt="Carro em promoção">
+            <p>Desconto especial em locações em Fortaleza!</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 LocaFacol - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

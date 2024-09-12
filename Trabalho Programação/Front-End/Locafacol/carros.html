@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocaFacol - Nossos Carros</title>
+    <link rel="stylesheet" href="css/carros.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/lg.png" alt="LocaFacol Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="carros.html">Carros</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Nossos Carros</h1>
+        <p>Veja a lista completa de carros disponíveis para locação.</p>
+        
+        <div class="carro-container">
+            <div class="carro-card">
+                <img src="imagens/ford.png" alt="Ford Fiesta 2020">
+                <div class="carro-info">
+                    <h2>Ford Fiesta 2020</h2>
+                    <p><strong>Placa:</strong> XYZ3B29</p>
+                    <ul>
+                        <li>4 Portas</li>
+                        <li>KM Livre</li>
+                        <li>Manual</li>
+                    </ul>
+                    <p class="preco">A partir de R$ 150,00/dia</p>
+                    <button class="btn-reservar" data-carro="Ford Fiesta 2020">Reservar</button>
+                </div>
+            </div>
+
+            <div class="carro-card">
+                <img src="imagens/Onix_LT_1_022e0e1597.png" alt="Chevrolet Onix 2019">
+                <div class="carro-info">
+                    <h2>Chevrolet Onix 2019</h2>
+                    <p><strong>Placa:</strong> QWE4C58</p>
+                    <ul>
+                        <li>4 Portas</li>
+                        <li>KM Livre</li>
+                        <li>Manual</li>
+                    </ul>
+                    <p class="preco">A partir de R$ 130,00/dia</p>
+                    <button class="btn-reservar" data-carro="Chevrolet Onix 2019">Reservar</button>
+                </div>
+            </div>
+
+            <div class="carro-card">
+                <img src="imagens/320.png" alt="BMW 320i 2014">
+                <div class="carro-info">
+                    <h2>BMW 320i 2014</h2>
+                    <p><strong>Placa:</strong> BGT7F21</p>
+                    <ul>
+                        <li>4 Portas</li>
+                        <li>KM Livre</li>
+                        <li>Automático</li>
+                    </ul>
+                    <p class="preco">A partir de R$ 250,00/dia</p>
+                    <button class="btn-reservar" data-carro="BMW 320i 2014">Reservar</button>
+                </div>
+            </div>
+
+            <div class="carro-card">
+                <img src="imagens/cvc.png" alt="Honda Civic 2021">
+                <div class="carro-info">
+                    <h2>Honda Civic 2021</h2>
+                    <p><strong>Placa:</strong> NOP9H47</p>
+                    <ul>
+                        <li>4 Portas</li>
+                        <li>KM Livre</li>
+                        <li>Automático</li>
+                    </ul>
+                    <p class="preco">A partir de R$ 220,00/dia</p>
+                    <button class="btn-reservar" data-carro="Honda Civic 2021">Reservar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LocaFacol - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Selecionar todos os botões de reservar
+        const botoesReservar = document.querySelectorAll('.btn-reservar');
+
+        // Adicionar o evento de clique em cada botão
+        botoesReservar.forEach((botao) => {
+            botao.addEventListener('click', function() {
+                // Captura o nome do carro no atributo data-carro
+                const carroSelecionado = this.getAttribute('data-carro');
+                
+                // Redirecionar para a página de reservas com o nome do carro na URL
+                window.location.href = `reservas.html?carro=${encodeURIComponent(carroSelecionado)}`;
+            });
+        });
+    </script>
+</body>
+</html>

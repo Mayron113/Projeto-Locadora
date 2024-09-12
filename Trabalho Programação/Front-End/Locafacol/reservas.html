@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocaFacol - Reservas de Veículos</title>
+    <link rel="stylesheet" href="css/reservas.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/lg.png" alt="LocaFacol Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="carros.html">Carros</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="reservas">
+        <h1>Reserva de Veículos</h1>
+        <form action="#" method="post">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+
+            <label for="veiculo">Escolha o veículo:</label>
+            <select id="veiculo" name="veiculo" required>
+                <option value="carro1">Carro 1 - Ford Fiesta 2020 - XYZ3B29</option>
+                <option value="carro2">Carro 2 - Chevrolet Onix 2019 - QWE4C58</option>
+                <option value="carro3">Carro 3 - Bmw 320i 2014 - BGT7F21</option>
+                <option value="carro4">Carro 4 - Honda Civic 2021 - NOP9H47</option>
+            </select>
+
+            <label for="data-retirada">Data de Retirada:</label>
+            <input type="date" id="data-retirada" name="data-retirada" required>
+
+            <label for="data-devolucao">Data de Devolução:</label>
+            <input type="date" id="data-devolucao" name="data-devolucao" required>
+
+            <label for="observacoes">Observações:</label>
+            <textarea id="observacoes" name="observacoes" rows="4" placeholder="Alguma observação?"></textarea>
+
+            <button type="submit">Confirmar Reserva</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LocaFacol - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

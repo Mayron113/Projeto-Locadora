@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora de Carros - Login</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- Tela de Login -->
+        <div class="form-container sign-in-container">
+            <form action="#" id="loginForm">
+                <h1>Login</h1>
+                <input type="email" id="loginEmail" placeholder="E-mail" required />
+                <input type="password" id="loginPassword" placeholder="Senha" required />
+                <a href="#">Esqueceu sua senha?</a>
+                <button type="submit">Entrar</button>
+                <span>Não tem conta? <a href="#" id="goToCadastro">Cadastre-se</a></span>
+            </form>
+        </div>
+        <!-- Tela de Cadastro -->
+        <div class="form-container sign-up-container">
+            <form action="#" id="registerForm">
+                <h1>Cadastro</h1>
+                <input type="text" id="registerName" placeholder="Nome" required />
+                <input type="email" id="registerEmail" placeholder="E-mail" required />
+                <input type="password" id="registerPassword" placeholder="Senha" required />
+                <input type="password" id="registerConfirmPassword" placeholder="Confirmar Senha" required />
+                <input type="text" id="registerAddress" placeholder="Endereço" required />
+                <input type="text" id="registerPhone" placeholder="Telefone" required />
+                <button type="submit">Cadastrar</button>
+                <span>Já tem conta? <a href="#" id="goToLogin">Faça login</a></span>
+            </form>
+        </div>
+        <!-- Informações do sistema -->
+        <div class="info-container">
+            <div class="info-panel">
+                <h2>Bem-vindo à Locadora</h2>
+                <p>Faça login para acessar seu painel e acompanhar suas locações!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conectar o arquivo JavaScript -->
+    <script src="Js/script.js"></script>
+</body>
+</html>
